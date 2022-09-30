@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+
+<head>
+  <!-- Title  -->
+  <title>Glassmorphism Calculator</title>
+  <!-- Meta -->
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap' rel='stylesheet'>
+  <!-- CSS -->
+  <link rel='stylesheet' href='style.css'>
+  <!-- JS -->
+  <script src='./vanilla-tilt.js'></script>
+  <script src='./main.js' defer></script>
+</head>
+
+
+<body>
+
+  <div class='container'>
+    <from class='calculator' id='calc'>
+      <input type='text' readonly class='value' id='txt'>
+      <span class='num' id='clear'>c</span>
+      <span class='num numButton'>/</span>
+      <span class='num numButton'>*</span>
+      <span class='num numButton'>7</span>
+      <span class='num numButton'>8</span>
+      <span class='num numButton'>9</span>
+      <span class='num numButton'>-</span>
+      <span class='num numButton'>4</span>
+      <span class='num numButton'>5</span>
+      <span class='num numButton'>6</span>
+      <span class='num numButton' id='plus'>+</span>
+      <span class='num numButton'>1</span>
+      <span class='num numButton'>2</span>
+      <span class='num numButton'>3</span>
+      <span class='num numButton'>0</span>
+      <span class='num numButton'>00</span>
+      <span class='num numButton'>.</span>
+      <span class='num' id='equal'>=</span>
+    </from>
+  </div>
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".your-element"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      'max-glare': .2
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".container"));
+  </script>
+  
+</body>
+
+
+</html>
